@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable Land Management Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Protect the Planet</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#practices">Practices</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Sustainable Farming and Land Use Practices</h1>
+            <p>Learn, implement and share eco-friendly farming practices that protect our environment while ensuring food security.</p>
+            <button class="cta-button">Get Started</button>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Sustainable Farming">
+        </div>
+    </section>
+
+    <!-- Sustainable Practices Section -->
+    <section id="practices" class="practices">
+        <div class="container">
+            <h2 class="section-title">Sustainable Farming Practices</h2>
+            <div class="practices-grid">
+                <div class="practice-card">
+                    <div class="practice-icon">🌱</div>
+                    <h3>Organic Farming</h3>
+                    <p>Eliminate synthetic pesticides and fertilizers to protect soil health and biodiversity.</p>
+		    <a href="https://rodaleinstitute.org/why-organic/organic-farming-practices/#:~:text=What%20makes%20a%20farm%20organic,food%20system%20and%20our%20lives.">Click Here</a>
+                </div>
+                <div class="practice-card">
+                    <div class="practice-icon">💧</div>
+                    <h3>Water Conservation</h3>
+                    <p>Implement drip irrigation, rainwater harvesting and other water-saving techniques.</p>
+		    <a href="https://learn.eartheasy.com/guides/45-ways-to-conserve-water-in-the-home-and-yard/">Click Here</a>
+                </div>
+                <div class="practice-card">
+                    <div class="practice-icon">🔄</div>
+                    <h3>Crop Rotation</h3>
+                    <p>Rotate crops to maintain soil fertility and break pest cycles naturally.</p>
+		    <a href="https://rodaleinstitute.org/why-organic/organic-farming-practices/crop-rotations/#:~:text=What%20is%20crop%20rotation?,bugs%20and%20disease%20at%20bay.">Click Here</a>
+                </div>
+                <div class="practice-card">
+                    <div class="practice-icon">🌾</div>
+                    <h3>Agroforestry</h3>
+                    <p>Integrate trees and shrubs into farming systems for enhanced biodiversity.</p>
+		    <a href="https://www.fao.org/agroforestry/about-agroforestry/overview/en">Click Here</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources">
+        <div class="container">
+            <h2 class="section-title">Learning Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <h3>Beginner's Guide to Composting</h3>
+                    <p>Learn how to turn organic waste into nutrient-rich compost for your farm.</p>
+                    <button class="resource-btn">Read Guide</button>
+                </div>
+                <div class="resource-card">
+                    <h3>Natural Pest Control Methods</h3>
+                    <p>Discover eco-friendly ways to protect your crops without harmful chemicals.</p>
+                    <button class="resource-btn">Read Guide</button>
+                </div>
+                <div class="resource-card">
+                    <h3>Soil Health Assessment</h3>
+                    <p>Learn how to test and improve your soil quality for better crop yields.</p>
+                    <button class="resource-btn">Read Guide</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Tools Section -->
+    <section id="tools" class="tools">
+        <div class="container">
+            <h2 class="section-title">Interactive Tools</h2>
+            <div class="tools-container">
+                <div class="tool-card">
+                    <h3>Carbon Footprint Calculator</h3>
+                    <p>Estimate your farm's carbon emissions and get recommendations to reduce them.</p>
+                    <div class="calculator">
+                        <div class="input-group">
+                            <label for="farm-size">Farm Size (acres):</label>
+                            <input type="number" id="farm-size" min="1" value="10">
+                        </div>
+                        <div class="input-group">
+                            <label for="livestock">Number of Livestock:</label>
+                            <input type="number" id="livestock" min="0" value="0">
+                        </div>
+                        <div class="input-group">
+                            <label for="fuel-usage">Monthly Fuel Usage (gallons):</label>
+                            <input type="number" id="fuel-usage" min="0" value="50">
+                        </div>
+                        <button id="calculate-btn" class="tool-btn">Calculate Footprint</button>
+                        <div id="result" class="result"></div>
+                    </div>
+                </div>
+                <div class="tool-card">
+                    <h3>Planting Calendar</h3>
+                    <p>Find the best times to plant various crops in your region.</p>
+                    <div class="calendar">
+                        <div class="input-group">
+                            <label for="region">Select Your Region:</label>
+                            <select id="region">
+                                <option value="north">Northern Region</option>
+                                <option value="south">Southern Region</option>
+                                <option value="east">Eastern Region</option>
+                                <option value="west">Western Region</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="crop">Select Crop:</label>
+                            <select id="crop">
+                                <option value="tomato">Tomatoes</option>
+                                <option value="corn">Corn</option>
+                                <option value="lettuce">Lettuce</option>
+                                <option value="potato">Potatoes</option>
+                            </select>
+                        </div>
+                        <button id="calendar-btn" class="tool-btn">Get Planting Dates</button>
+                        <div id="calendar-result" class="result"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="community">
+        <div class="container">
+            <h2 class="section-title">Join Our Community</h2>
+            <div class="community-content">
+                <div class="community-text">
+                    <h3>Connect with Sustainable Farmers</h3>
+                    <p>Share experiences, ask questions, and learn from other farmers practicing sustainable agriculture.</p>
+                    <ul>
+                        <li>Participate in discussion forums</li>
+                        <li>Share your success stories</li>
+                        <li>Get advice from experts</li>
+                        <li>Find local sustainable farming events</li>
+                    </ul>
+                    <button class="community-btn">Join Now</button>
+                </div>
+                <div class="community-image">
+                    <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Farmers Community">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><strong>Email:</strong> joshuabisimwa02@gmail.com</p>
+                    <p><strong>Phone:</strong> +265993655107</p>
+                    <p><strong>Address:</strong> Dowa District, Lilongwe City, Malawi</p>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Sustainable Land Management Platform. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
